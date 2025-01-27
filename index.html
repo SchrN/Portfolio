@@ -5,81 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Nico Schreiner</title>
   <style>
-    /* Browser-Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      overflow-x: hidden;
     }
 
     .blue-section1 {
       background-color: #36454F;
-      height: 730px;
-      padding-left: 150px;
-      padding-right: 150px;
-      padding-top: 100px;
-      padding-bottom: 100px;
+      height: 80vh; /* Set to viewport height */
+      padding-left: 10vw;
+      padding-right: 10vw;
       font-family: Verdana, sans-serif;
       color: white;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 100px;
     }
 
     .blue-section1 .text {
-      max-width: 60%;
-    }
-
-    .blue-section1 img {
-      max-width: 35%;
-      height: auto;
-    }
-
-    .blue-section2 {
-      background-color: #36454F;
-      padding: 0px;
-      color: white;
-    }
-
-    .blue-section3 {
-      background-color: #36454F;
-      height: 150px;
-      padding-right: 150px;
-      padding-left: 150px;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: Verdana, sans-serif;
+      max-width: 50vw;
     }
 
     .white-section {
       background-color: white;
-      width: 100%;
-      color: black;
-      padding: 50px;
-      padding-left: 58px;
-      padding-right: 150px;
-      padding-top: 100px;
-      padding-bottom: 100px;
+      width: 100vw;
+      height: 175vh;
+      padding-top: 6vh;
+      color: black;  
       border-radius: 10%;
       font-family: Verdana, sans-serif;
       text-align: center;
       border: 2px solid black;
-    }
-
-    .white-section h1 {
-      font-size: 50px;
-      margin-left: 87px; /* Wert anpassen, um die Überschrift weiter nach rechts zu verschieben */
+      margin: auto; /* Center within the parent */
     }
 
 
-    /* Projects Section */
+    .blue-section2 {
+      background-color: #36454F;
+      height: 175vh; /* Set to viewport height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blue-section3 {
+      background-color: #36454F;
+      height: 20vh; /* Set to viewport height */
+      padding-left: 10vw;
+      padding-right: 10vw;
+      font-family: Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+        /* Projects Section */
     .projects {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 80px;
-      padding: 50px;
+      height: 160vh;
+      gap: 8%;
+      padding: 5%;
     }
 
     .project-card {
@@ -127,9 +116,11 @@
       font-size: 1.5em;
     }
 
+
   </style>
 </head>
 <body>
+
   <section class="blue-section1">
     <div class="text">
       <h1 style="font-size: 70px;">Welcome to my Portfolio!</h1>
@@ -173,7 +164,7 @@
         <div class="project-card">
           <img src="Pictures/testa.png" alt="Project 3" width="300" height="200">
           <h3>Evaluation of machine learning models</h3>
-          <p style="font-size: 15px;">In my bachelor's thesis, I modified an existing framework to ensure compatibility with the dataset used for epilepsy research. After optimizing the preprocessing stage, I tested various machine learning models to evaluate their performance and developed additional models. A key focus was on hyperparameter optimization to maximize Performance</p>
+          <p style="font-size: 13px;">In my bachelor's thesis, I modified an existing framework to ensure compatibility with the dataset used for epilepsy research. After optimizing the preprocessing stage, I tested various machine learning models to evaluate their performance and developed additional models. A key focus was on hyperparameter optimization to maximize performance</p>
           <div class="icons">
             <a href="https://github.com/SchrN/--seizure-type-classification-tuh-v2.0.0" target="_blank">
               <img src="Pictures/github.png" alt="GitHub" width="30" height="30">
@@ -189,7 +180,7 @@
         <div class="project-card">
           <img src="Pictures/portfolio.svg" alt="Project 4" width="300" height="200">
           <h3>Portfolio</h3>
-          <p style="font-size: 15px;">This portfolio is an ongoing project that I continuously expand and improve. It serves as a showcase of my skills and also as a great opportunity to enhance my HTML, CSS, and web development skills.</p>
+          <p style="font-size: 15px;">This portfolio is an ongoing project that I continuously expand and improve. It serves as a showcase of my skills and also as a great opportunity to enhance my HTML, CSS and web development skills.</p>
           <div class="icons">
             <a href="https://schrn.github.io/" target="_blank">
               <img src="Pictures/github.png" alt="GitHub" width="30" height="30">
@@ -197,13 +188,12 @@
             <a href="#"><i class="fas fa-code"></i></a>
           </div>
         </div>
-
       </section>
     </div>
-  </section>
+  </section>  
 
   <section class="blue-section3" style="display: flex; justify-content: space-between; align-items: center;">
-    <p style="font-size: 15px;">&copy; 2024 Nico Schreiner </p>
+    <p style="font-size: 15px;">&copy; 2025 Nico Schreiner </p>
     <div class="icons" style="display: flex; gap: 15px;">
       <a href="https://github.com/SchrN?tab=repositories" target="_blank">
         <img src="Pictures/github.png" alt="Email" width="30" height="30">
@@ -213,14 +203,6 @@
       </a>
     </div>
   </section>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
